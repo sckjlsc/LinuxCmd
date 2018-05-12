@@ -1,0 +1,25 @@
+tar -zxvf data.tar.gz
+Where,
+
+-z : Uncompress the resulting archive with gzip command.
+-x : Extract to disk from the archive.
+-v : Produce verbose output i.e. show progress and file names while extracting files.
+-f data.tar.gz : Read the archive from the specified file called data.tar.gz.
+By defaults files will be extracted into the current directory. To change the directory use -C option. In this example, extract files in /data/projects directory:
+
+tar -zxvf data.tar.gz -C /data/projects
+To view a detailed table of contents (list all files) for this archive, enter:
+
+tar -tzvf data.tar.gz
+
+
+
+$ gunzip file.gz
+OR
+$ gzip -d file.gz
+
+
+ls -l --block-size=M
+or ls -lh
+
+rpm -ivh slack-2.5.2-0.1.fc21.x86_64.rpm 

@@ -1,0 +1,32 @@
+{
+   ignore_libcrypto_conditional_jump_errors
+   Memcheck:Leak
+   ...
+   obj:*/libcrypto.so.*
+}
+{
+   ignore_unversioned_libs
+   Memcheck:Leak
+   ...
+   obj:*/lib*/lib*.so
+}
+{
+   ignore_versioned_libs
+   Memcheck:Leak
+   ...
+   obj:*/lib*/lib*.so.*
+}
+{
+   ignore_unversioned_libs
+   Memcheck:Leak
+   obj:*/lib*/lib*.so
+   ...
+   obj:*/lib*/lib*.so
+}
+{
+   ignore_versioned_libs
+   Memcheck:Leak
+   obj:*/lib*/lib*.so.*
+   ...
+   obj:*/lib*/lib*.so.*
+}

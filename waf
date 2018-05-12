@@ -1,0 +1,28 @@
+clwaf configure --prefix=_run
+waf clean
+
+  349  alias waf
+  350  vi ~/.bashrc
+  351  vi ~/.bash_profile 
+  352  . ~/.bash_profile
+  353  echo $PATH
+  3
+  355  ls -l /home/sancai.li/workspace/higgs/build/waf
+  367  _build/dbg/ccgh/libctpapi/test/func/ctpapi_funcD --config=ccgh/libctpapi/config/ctp-ems.json
+  376  ulimit -a
+  377  ulimit coredumpsize unlimited
+  378  ulimit coredump unlimited
+  379  ulimit core unlimited
+  380  ulimit -h
+  381  ulimit -c unlimited
+  383  _build/dbg/ccgh/libctpapi/test/func/ctpapi_funcD --config=ccgh/libctpapi/config/ctp-ems.json
+  385  ls -l core.13902 
+  386  file core.13902 
+
+waf > lsc.log 2>&1
+
+
+
+
+
+taskset -c 6,7 eclipse > /dev/null 2>&1 &

@@ -1,0 +1,6 @@
+valgrind ./ccgh/hummer/test/reg/hummer_regD --gtest_filter=NimbleStackerTest.should_only_start_when_bbo_and_marketstatus_ok
+valgrind --leak-check=yes ./ccgh/libflexapi/test/reg/flexapi_regD --gtest_filter=TestMcGroup.handle_funari
+valgrind --tool=helgrind
+valgrind --leak-check=full --show-reachable=yes --error-limit=no --gen-suppressions=all --log-file=valgrind.log ./ccgh/hummer/test/reg/hummer_regD --gtest_filter=NimbleStackerTest.should_only_start_when_bbo_and_marketstatus_ok
+
+valgrind --leak-check=full --show-reachable=yes --error-limit=no --suppressions=./valgrind.supp --gen-suppressions=all --log-file=valgrind.log ./ccgh/hummer/test/reg/hummer_regD --gtest_filter=NimbleStackerTest.should_only_start_when_bbo_and_marketstatus_ok

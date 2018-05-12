@@ -1,0 +1,8 @@
+sudo /usr/lib/virtualbox/vboxdrv.sh setup
+
+Edit /etc/yum.repos.d/dropbox.repo:
+replacing $releasever for "22"
+
+tail -200f bobD.current | egrep -A10 'OrderAccepted|CancelOrder|OrderReject|Prepared'
+
+13:35:00.* Issue Code [1925
